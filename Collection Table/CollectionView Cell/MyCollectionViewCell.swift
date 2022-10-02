@@ -17,8 +17,8 @@ class MyCollectionViewCell: UICollectionViewCell {
         return UINib(nibName: "MyCollectionViewCell", bundle: nil)
     }
     
-    func configure(with model: Model) {
-        self.imageView.image = UIImage(named: model.imageName)
+    func configure(with model: Activity) {
+        self.imageView.image = UIImage(named: model.activityImage)
         self.imageView.contentMode = .scaleAspectFill
     }
     

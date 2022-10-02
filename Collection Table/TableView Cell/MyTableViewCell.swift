@@ -10,7 +10,7 @@ import UIKit
 class MyTableViewCell: UITableViewCell {
 
     @IBOutlet var collectionView: UICollectionView!
-    var models = [Model]()
+    var routines: Routine?
     
     static let identifier = "MyTableViewCell"
     
@@ -18,8 +18,8 @@ class MyTableViewCell: UITableViewCell {
         return UINib(nibName: "MyTableViewCell", bundle: nil)
     }
 
-    func configure(with models: [Model]) {
-        self.models = models
+    func configure(with routine: Routine) {
+        self.routines = routine
         collectionView.reloadData()
     }
     
@@ -39,12 +39,12 @@ class MyTableViewCell: UITableViewCell {
 extension MyTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return models.count
+        return (routines?.activities.count)!
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyCollectionViewCell.identifier, for: indexPath) as! MyCollectionViewCell
-        cell.configure(with: models[indexPath.row])
+        cell.configure(with: routines!.activities[indexPath.item])
         return cell
     }
     
