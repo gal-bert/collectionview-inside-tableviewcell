@@ -46,6 +46,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     // Add header
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return routines[section].category
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return CustomTableViewHeader(text: routines[section].category)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 100
+    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: indexPath, animated: true)
