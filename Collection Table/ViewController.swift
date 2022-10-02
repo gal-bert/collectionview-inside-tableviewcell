@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var models = [Model]()
+    var models = DataFeeder().modelArray
     
     private lazy var tableView: UITableView = {
        let view = UITableView()
@@ -21,12 +21,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        
-        models.append(Model(text: "1", imageName: "wallpaper-1"))
-        models.append(Model(text: "2", imageName: "wallpaper-2"))
-        models.append(Model(text: "3", imageName: "wallpaper-3"))
-        models.append(Model(text: "4", imageName: "wallpaper-4"))
-        
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -63,9 +57,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-    
-    
-    
     
 }
 

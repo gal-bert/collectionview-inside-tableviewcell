@@ -1,0 +1,52 @@
+category        : "Perawatan Diri"
+activityName    : "Gosok Gigi"
+activityImage   : "file:///xxx/xxx/xxx/gosok-gigi"
+activityDesc    : "Gigi jadi bersih"
+
+category        : "Perawatan Diri"
+activityName    : "Mandi Pagi"
+activityImage   : "file:///xxx/xxx/xxx/mandi-pagi"
+activityDesc    : "Gigi jadi bersih"
+
+
+category        : "Perawatan Diri"
+activityName    : "Cuci Muka"
+activityImage   : "file:///xxx/xxx/xxx/cuci-muka"
+activityDesc    : "Gigi jadi bersih"
+
+-------------------------------------------------------
+
+category        : "Kegiatan Rumah"
+activityName    : "Vakum Karpet"
+activityImage   : "file:///xxx/xxx/xxx/vakum-karpet"
+activityDesc    : "Gigi jadi bersih"
+
+category        : "Kegiatan Rumah"
+activityName    : "Menyiram Tanaman"
+activityImage   : "file:///xxx/xxx/xxx/menyiram-tanaman"
+activityDesc    : "Gigi jadi bersih"
+
+category        : "Kegiatan Rumah"
+activityName    : "Memberi Makan Kucing"
+activityImage   : "file:///xxx/xxx/xxx/memberi-makan-kucing"
+activityDesc    : "Gigi jadi bersih"
+
+-------------------------------------------------------
+
+Activity
+category        : Category
+activityName    : String
+activityImage   : String
+activityDesc    : String
+
+
+ActivityCollection
+category        : Category
+activities      : [Activity]
+
+SELECT * FROM ActivityCollection 
+
+
+
+
+

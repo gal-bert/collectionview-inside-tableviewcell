@@ -15,6 +15,7 @@
 		0C1D228028E611BE00DFF490 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D227E28E611BE00DFF490 /* MyTableViewCell.swift */; };
 		0C1D228428E6121A00DFF490 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D228228E6121A00DFF490 /* MyCollectionViewCell.swift */; };
 		0C1D228528E6121A00DFF490 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1D228328E6121A00DFF490 /* MyCollectionViewCell.xib */; };
+		0C79CE8D28E9F01600706D0A /* DataFeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79CE8C28E9F01600706D0A /* DataFeeder.swift */; };
 		0CA605CA28E61456001C221B /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA605C928E61456001C221B /* MyTableViewCell.xib */; };
 		0CA605CC28E61946001C221B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA605CB28E61946001C221B /* Model.swift */; };
 /* End PBXBuildFile section */
@@ -30,8 +31,10 @@
 		0C1D227E28E611BE00DFF490 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		0C1D228228E6121A00DFF490 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		0C1D228328E6121A00DFF490 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		0C79CE8C28E9F01600706D0A /* DataFeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFeeder.swift; sourceTree = "<group>"; };
 		0CA605C928E61456001C221B /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		0CA605CB28E61946001C221B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0CEAD80428E68A8D00E8A14F /* Data Shape.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Data Shape.txt"; path = "Collection Table/Data Shape.txt"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 		0C1D225E28E6025500DFF490 = {
 			isa = PBXGroup;
 			children = (
+				0C79CE8C28E9F01600706D0A /* DataFeeder.swift */,
 				0C1D226928E6025500DFF490 /* Collection Table */,
 				0C1D226828E6025500DFF490 /* Products */,
 			);
@@ -64,6 +68,7 @@
 		0C1D226928E6025500DFF490 /* Collection Table */ = {
 			isa = PBXGroup;
 			children = (
+				0CEAD80428E68A8D00E8A14F /* Data Shape.txt */,
 				0C1D228728E6123900DFF490 /* TableView Cell */,
 				0C1D228628E6122A00DFF490 /* CollectionView Cell */,
 				0C1D226A28E6025500DFF490 /* AppDelegate.swift */,
@@ -168,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C1D226F28E6025500DFF490 /* ViewController.swift in Sources */,
+				0C79CE8D28E9F01600706D0A /* DataFeeder.swift in Sources */,
 				0C1D228428E6121A00DFF490 /* MyCollectionViewCell.swift in Sources */,
 				0C1D226B28E6025500DFF490 /* AppDelegate.swift in Sources */,
 				0CA605CC28E61946001C221B /* Model.swift in Sources */,
