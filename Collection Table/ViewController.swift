@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var models = DataFeeder().modelArray
+    var routines = DataFeeder().routines
     
     private lazy var tableView: UITableView = {
        let view = UITableView()
@@ -35,16 +35,17 @@ class ViewController: UIViewController {
         ])
         
     }
-
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier, for: indexPath) as! MyTableViewCell
-        cell.configure(with: models) //MARK: Try to inject header-detail data
+        cell.configure(with: routines[indexPath.section])
         return cell
     }
+    
+    // Add header
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: indexPath, animated: true)
@@ -52,6 +53,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 250
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return routines.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
